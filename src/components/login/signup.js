@@ -3,7 +3,7 @@ import React, { Component } from "react";
 export default class SignUp extends Component {
     render() {
         return (
-            <form class="form-group col-md-6 m-5 sm-3">
+            <form class="form-group col-md-6 ">
                 <h3>Sign Up</h3>
 
                 <div className="form-group mb-3">

@@ -3,57 +3,60 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import '@fortawesome/fontawesome-free/css/all.min.css'; 
+import 'bootstrap-css-only/css/bootstrap.min.css'; 
+import 'mdbreact/dist/css/mdb.css';
 
 
-
-
-import Login from "./components/login/login.component";
-import SignUp from "./components/login/signup.component.js";
+import Course from "./components/course/Course";
+// import Login from "./components/login/login";
+// import SignUp from "./components/login/signup";
+import Assignment from './components/assignment/assignment';
 
 function App() {
   return (
-    <Router>
-     
-      <div className="container ">
-        
-        <Switch>
-          <Route exact path="/">
-          </Route>
-         
-        
-       
-        </Switch>
-      </div>
-    
-    <div className="App m-5 mb-3">
-      <nav className="navbar navbar-expand-lg navbar-light fixed-top">
-        <div className="container m-3">
+    <Router>    
+    <div className="App m-5 mb-5" >
+      <nav className="navbar   fixed-top">
+        <div className="container">
           
-          <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul className="navbar-nav ml-auto">
+        
+            <ul className="navbar-nav ">
+             
               <li className="nav-item">
-                <Link className="nav-link" to={"/sign-in"}><button type="button" class="btn btn-primary">Login</button></Link>
+                <Link className="nav-link" to={"/course"}><button type="button" class="btn btn-primary">Course</button></Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to={"/sign-up"}><button type="button" class="btn btn-primary">Sign Up</button></Link>
-              </li>
+            
             </ul>
-          </div>
+          
         </div>
       </nav>
 
       <div className="auth-wrapper">
         <div className="auth-inner">
           <Switch>
-            <Route exact path='/' component={Login} />
+            {/* <Route exact path='/' component={Login} />
             <Route path="/sign-in" component={Login} />
             <Route path="/sign-up" component={SignUp} />
+            <Route path="/course" component={Course} />*/}
+            <Route path="/assignment" component={Assignment} /> 
+            <Route path="/" component={Course} />
           </Switch>
+          
         </div>
+       
+        
       </div>
+      
     </div>
+
+      
+
     </Router>
-    
+
+ 
+      
+  
   );
 }
 
