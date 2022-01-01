@@ -8,8 +8,6 @@ import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
 
 
-
-
 import Course from "./components/course/Course";
 import Login from "./components/login/login";
 import SignUp from "./components/login/signup";

@@ -13,10 +13,10 @@ import './assignment.css'
 const Sidebar = () => {
     let { path, url } = useRouteMatch();
   return (
-    <div 
+    <div className="side"
       style={{ display: 'flex', height: '100vh', overflow: 'scroll initial' }}
     >
-      <CDBSidebar textColor="#333" backgroundColor="#F6F5F5">
+      <CDBSidebar textColor="#333" backgroundColor="#FAF9F9">
         <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
           <a
             href="/assignment"
@@ -30,19 +30,26 @@ const Sidebar = () => {
         <CDBSidebarContent className="sidebar-content">
           <CDBSidebarMenu>
             <NavLink exact to={`${url}/assignment1`} activeClassName="activeLink">
-              <CDBSidebarMenuItem className="navlink" >Assignment 1</CDBSidebarMenuItem>
+              <CDBSidebarMenuItem className="navlink" >
+                Assignment 1
+              </CDBSidebarMenuItem>
             </NavLink>
             <NavLink exact to={`${url}/assignment`} activeClassName="activeLink">
-              <CDBSidebarMenuItem className="navlink" >Assignment 2</CDBSidebarMenuItem>
+              <CDBSidebarMenuItem className="navlink" >
+                Assignment 2
+              </CDBSidebarMenuItem>
             </NavLink>
             <NavLink exact to={`${url}/assignment3`} activeClassName="activeLink">
-              <CDBSidebarMenuItem className="navlink" >Assignment 3</CDBSidebarMenuItem>
+              <CDBSidebarMenuItem className="navlink" >
+                Assignment 3
+              </CDBSidebarMenuItem>
             </NavLink>
             <NavLink exact to={`${url}/assignment4`} activeClassName="activeLink">
               <CDBSidebarMenuItem className="navlink" >
               Assignment 4
               </CDBSidebarMenuItem>
             </NavLink>
+            
           </CDBSidebarMenu>
         </CDBSidebarContent>
 
