@@ -7,7 +7,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap-css-only/css/bootstrap.min.css'; 
 import 'mdbreact/dist/css/mdb.css';
 
-
+import Navbar  from './components/navbar/Navbar'
 import Course from "./components/course/Course";
 import Login from "./components/login/login";
 import SignUp from "./components/login/signup";
@@ -18,7 +18,7 @@ function App() {
     <Router>    
     <div className="App " >
      
-
+<Navbar/>
       <div className="auth-wrapper">
         <div className="auth-inner">
           <Switch>

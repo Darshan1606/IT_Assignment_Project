@@ -16,7 +16,7 @@ const Sidebar = () => {
     <div className="side"
       style={{ display: 'flex', height: '100vh', overflow: 'scroll initial' }}
     >
-      <CDBSidebar textColor="#333" backgroundColor="#FAF9F9">
+      <CDBSidebar textColor="#333" backgroundColor="#fff">
         <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
           <a
             href="/assignment"
@@ -31,7 +31,7 @@ const Sidebar = () => {
           <CDBSidebarMenu>
             <NavLink exact to={`${url}/assignment1`} activeClassName="activeLink">
               <CDBSidebarMenuItem className="navlink" >
-                Assignment 1
+                Assignment 1  
               </CDBSidebarMenuItem>
             </NavLink>
             <NavLink exact to={`${url}/assignment`} activeClassName="activeLink">
